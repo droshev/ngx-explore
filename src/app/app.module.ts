@@ -6,8 +6,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { CdkTableModule } from '@angular/cdk/table';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 
-import { RatingIndicatorModule } from '@fundamental-ngx/core/rating-indicator';
-import { ButtonModule } from '@fundamental-ngx/core/button';
+// import { RatingIndicatorModule } from '@fundamental-ngx/core/rating-indicator';
+// import { ButtonModule } from '@fundamental-ngx/core/button';
+
+import { FundamentalNgxCoreModule } from '@fundamental-ngx/core';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -24,8 +26,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     CdkTableModule,
     DragDropModule,
-    ButtonModule,
-    RatingIndicatorModule
+    FundamentalNgxCoreModule
+    // ButtonModule,
+    // RatingIndicatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
